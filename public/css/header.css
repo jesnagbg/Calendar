@@ -1,0 +1,5 @@
+/* Mobile first */
+
+header {
+    height: var(--header-height);
+}

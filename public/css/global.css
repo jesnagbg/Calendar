@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root {
+    --header-height: 5rem;
+    --first-color: #DAF4FF;; ;
+    --second-color: #f9eaea;
+    --third-color:#18191A;
+    --forth-color: #FFFFFF;
+    --fifth-color: #3722f5;
+    --sixth-color: #f9dede;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;   
+    margin: 0;
+    padding: 0;
+    color: var(--third-color);
+}
+
+/* Flex */ 
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center-x {
+    justify-content: center;
+}
+
+.center-y {
+    align-items: center;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.display-none {
+    display: none;
+}
+
+/* Styling for text */
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.line-height {
+    line-height: 1.6;
+}
+
+/* Background colors */ 
+
+.lightblue {
+    background: var(--first-color);
+}
+
+.lightpink {
+    background: var(--second-color)
+}
+
+.black {
+    background: var(--third-color);
+}
+
+.white {
+    background: var(--forth-color);
+}
+
+/* Border-radius */
+
+.border-r-02 {
+    border-radius: .2rem;
+}
+
+
+/* Margins */
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-left-1 {
+    margin-left: 1rem;
+}
+
+.margin-right-1 {
+    margin-right: 1rem;
+}
+
+.margin-left-2 {
+    margin-left: 2rem;
+}
+
+.margin-right-2 {
+    margin-right: 2rem;
+}
+
+.margin-top-1 {
+    margin-top: 1rem;
+}
+
+.margin-bottom-1 {
+    margin-bottom: 1rem;
+}
+
+.margin-top-2 {
+    margin-top: 2rem;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 2rem;
+}
+
+/* Padding */
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-1 {
+    padding: 1rem;
+}
+
+.padding-2 {
+    padding: 2rem;
+}
+
+.padding-left-1 {
+    padding-left: 1rem;
+}
+
+.padding-right-1 {
+    padding-right: 1rem;
+}
+
+.padding-bottom-1 {
+    padding-bottom: 1rem;
+}

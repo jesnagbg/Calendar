@@ -1,0 +1,72 @@
+/* Mobile first */
+
+aside {
+    flex: 1;
+}
+
+.save-button {
+    font-family: 'Work Sans', sans-serif; 
+    padding: .75rem 1rem .75rem 1rem;
+    background: var(--third-color);
+    border: none;
+    border-radius: 0.2rem;
+    color: var(--forth-color);
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.save-button:hover {
+    background: var(--fifth-color);
+}
+
+button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-left: 0.8rem;
+    background: var(--third-color);
+}
+
+button:hover {
+    background: var(--fifth-color);
+}
+
+button i {
+    color: var(--forth-color);
+}
+
+ul {
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+ul li {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+input {
+    font-family: 'Work Sans', sans-serif; 
+    height: 1.5rem;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    border-style: none;
+    margin-bottom: .5rem;
+}
+
+input:hover {
+    border: solid 0.1rem var(--third-color);
+}
+
+.edit-border {
+    border: 2px dashed var(--forth-color);
+}
+
+
+

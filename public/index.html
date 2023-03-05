@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender</title>
+    <script src="https://kit.fontawesome.com/b44cc68ba0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/today.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/holidays.js"></script>
+</head>
+
+<body>
+
+    <header class="flex center-x center-y">
+        <h1>Kalender</h1>
+    </header>
+
+    <div class="wrapper flex margin-left-1 margin-right-1 margin-top-1 margin-bottom-2">
+        <aside>
+            <div data-cy="welcome-segment" id="today-container" class="flex column center-x center-y border-r-02 padding-2 margin-bottom-1 lightblue">
+                <h3>Hej!</h3>
+                <div>
+                    <p id="current-date">
+                        <!--Injected by JavaScript-->
+                    </p>
+                </div>
+                <h3 id="current-time">
+                    <!--Injected by JavaScript-->
+                </h3>   
+            </div>
+
+            <div id="todo-container">
+                <div id="todo-form-container" class="border-r-02 padding-left-1 padding-right-1 padding-bottom-1 lightblue">
+                    <form id="new-todo-form" class="flex column">
+                            <h4>Lägg till aktivitet</h4>
+                            <h5>Titel</h5>
+                            <input data-cy="todo-task-input" id="input-new-todo-text" type="text" placeholder="Titel">
+                            <h5>Datum</h5>
+                            <input data-cy="todo-date-input" id="input-new-todo-date" type="date">
+                        <div id="todo-button-container" class="margin-top-1">
+                            <button data-cy="save-todo" id="create-todo" class="save-button">Spara</button>
+                        </div>
+                    </form>   
+                </div>
+                
+                <div data-cy="todo-list" id="todo-list-container" class="flex column padding-left-1 padding-right-1 border-r-02 padding-bottom-1 lightblue">
+                    <h4 id="global-todo-title">Aktivitet</h4>
+                    <ul data-cy="todo-list" id="todo-global-list">
+                        <li>
+                            <!--Todos injected by JavaScript-->
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </aside>
+
+        
+        <main id="full-calendar-container">
+
+            <div class="calendar-headline flex row around center-y border-r-02 black">
+                <button data-cy="prev-month" id="prev-month-button" class="angle-button"><i class="fa-solid fa-angle-left"></i></button>
+                    <div class="month-year flex row">
+                        <h2 id="current-month" class="margin-right-1"></h2>
+                        <h2 id="current-year"></h2>
+                    </div>
+                <button data-cy="next-month" id="next-month-button" class="angle-button"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div class="weekday-container flex row center-x border-r-02">
+                <div class="weekday">
+                    <h4>Mån</h4>
+                </div>
+                <div class="weekday">
+                    <h4>Tis</h4>
+                </div>
+                <div class="weekday">
+                    <h4>Ons</h4>
+                </div>
+                <div class="weekday">
+                    <h4>Tors</h4>
+                </div>
+                <div class="weekday">
+                    <h4>Fre</h4>
+                </div>
+                <div class="weekday">
+                    <h4>Lör</h4>
+                </div>
+                <div class="weekday">
+                    <h4>Sön</h4>
+                </div>
+            </div>
+
+            <div data-cy="calendar-body" id="calendar-dates-container">
+                <!--Dates in calendar injected by JavaScript-->
+            </div>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
